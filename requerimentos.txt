@@ -1,0 +1,42 @@
+Ideia
+    Desenvolver uma base de dados sobre veículos.
+    Simular um cliente/servidor
+        Servidor: Responsável pela controle da base de dados
+        Cliente: Responsável por consumir os dados distribuídos pelo servidor
+        Protocolo: Responsável pela comunicação do cliente com o servidor
+Entidades
+    Veículo[placa,renavam,nome e cpf do condutor,nome do modelo,data de fabricação]
+    Condutores[nome,cpf]
+Banco de dados
+    Deve ser implementado com uma ÁrvoreAVL
+    A modelagem cada nó faz parte da interpretação
+Requisitos
+    Cliente/Servidor no mesmo computador
+    Cliente deve fazer consultas por placa e renavam
+    Cliente deve cadastrar um novo veículo
+    Cliente deve listar TODOS os dados de TODOS os veículos
+    Cliente deve alterar um veículo
+    Cliente deve acessar a quantidade de veículos
+    Servidor deve guardar logs que informam a altura da árvore a cada inserção ou remoção e se houve rotação (dica: guardar em um arquivo)
+    A aplicação deve fazer autenticação (OPCIONAL)
+    A aplicação deve implementar tratamento de erros e exceções sempre que possível
+Execução da simulação
+    Inicia o programa
+        50 veículos devem ser adicionados no servidor
+        pós isso, mostrar a interface do cliente
+        Realizar:
+            Cinco consultas
+            Uma listagem
+            Um cadastro
+            Uma listagem
+            Um cadastro
+            Uma listagem
+            Uma alteração
+            Uma listagem
+            Uma remoção
+            Uma listagem
+            Uma remoção
+            Uma listagem
+
+Dados para testes
+    Iniciais

@@ -1,0 +1,54 @@
+Renavam: 23456789012
+Placa: DEF5678
+Data de Fabricação: 2021-08-25
+Modelo: Thunder Blaze
+Nome do Condutor: Emily Johnson
+CPF do Condutor: 222.333.444-55
+Renavam: 34567890123
+Placa: GHI7890
+Data de Fabricação: 2020-02-10
+Modelo: Heavy Hauler
+Nome do Condutor: Michael Williams
+CPF do Condutor: 333.444.555-66
+Renavam: 45678901234
+Placa: JKL9012
+Data de Fabricação: 2019-11-05
+Modelo: Family Voyager
+Nome do Condutor: Sophia Anderson
+CPF do Condutor: 444.555.666-77
+Renavam: 56789012345
+Placa: MNO1234
+Data de Fabricação: 2018-06-20
+Modelo: Adventure Seeker X
+Nome do Condutor: Robert Martinez
+CPF do Condutor: 555.666.777-88
+Renavam: 67890123456
+Placa: PQR5678
+Data de Fabricação: 2022-11-30
+Modelo: Urban Glide
+Nome do Condutor: Maria Rodriguez
+CPF do Condutor: 666.777.888-99
+Renavam: 78901234567
+Placa: STU7890
+Data de Fabricação: 2020-07-12
+Modelo: Speedster 2000
+Nome do Condutor: David Lee
+CPF do Condutor: 777.888.999-00
+Renavam: 89012345678
+Placa: VWX9012
+Data de Fabricação: 2019-04-18
+Modelo: Cargo King
+Nome do Condutor: Laura Taylor
+CPF do Condutor: 888.999.000-11
+Renavam: 90123456789
+Placa: YZA1234
+Data de Fabricação: 2021-01-05
+Modelo: Commuter Plus
+Nome do Condutor: Daniel Brown
+CPF do Condutor: 999.000.111-22
+Renavam: 12345123451
+Placa: BCDE5678
+Data de Fabricação: 2018-09-23
+Modelo: Trail Master
+Nome do Condutor: Jennifer White
+CPF do Condutor: 000.111.222-33"

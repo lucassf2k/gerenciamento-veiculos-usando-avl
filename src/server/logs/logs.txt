@@ -1,0 +1,95 @@
+Altura: 0
+Altura: 1
+;RES;
+Altura: 1
+Altura: 2
+;RES;
+Altura: 2
+;RES;
+Altura: 2
+;RES;
+Altura: 2
+Altura: 3
+;RES;
+;RDS;
+Altura: 3
+;RES;
+;RDS;
+Altura: 3
+Altura: 3
+;RES;
+;RDS;
+Altura: 3
+Altura: 3
+Altura: 4
+Altura: 4
+Altura: 4
+;RDS;
+Altura: 4
+Altura: 4
+;RES;
+;RDS;
+Altura: 4
+Altura: 4
+Altura: 4
+Altura: 4
+Altura: 5
+Altura: 5
+;RDS;
+Altura: 5
+;RDS;
+Altura: 5
+Altura: 5
+Altura: 5
+;RDS;
+Altura: 5
+;RDS;
+Altura: 5
+Altura: 5
+Altura: 5
+Altura: 5
+Altura: 5
+Altura: 5
+;RES;
+Altura: 5
+;RDS;
+;RES;
+Altura: 5
+Altura: 5
+Altura: 5
+;RDS;
+Altura: 5
+;RDS;
+Altura: 5
+;RES;
+;RDS;
+Altura: 5
+;RDS;
+;RES;
+Altura: 5
+Altura: 5
+Altura: 5
+;RDS;
+Altura: 5
+Altura: 5
+Altura: 5
+Altura: 5
+Altura: 5
+;RES;
+Altura: 5
+Altura: 5
+;RDS;
+;RES;
+Altura: 5
+;RDS;
+;RES;
+Altura: 5
+;RDS;
+Altura: 5
+;RDS;
+Altura: 5
+;RDS;
+Altura: 5
+Altura: 6
+Altura: 6
+Altura: 6
