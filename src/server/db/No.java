@@ -62,10 +62,10 @@ public class No {
 	@Override
 	public String toString() {
 		return "Placa: " + this.valor.getLicencePlate() + 
-		" Modelo: " + this.valor.getName() + 
-		" Renavam: " + this.valor.getRenavam() + 
-		" Data de fabricação: " + this.valor.getManufacturingDate() + 
-		" Nome do condutor: " + this.valor.getDriver().getName() + 
-		" CPF do condutor " + this.valor.getDriver().getCpf();
+		"; Modelo: " + this.valor.getName() + 
+		"; Renavam: " + this.valor.getRenavam() + 
+		"; Data de fabricação: " + this.valor.getManufacturingDate() + 
+		"; Nome do condutor: " + this.valor.getDriver().getName() + 
+		"; CPF do condutor " + this.valor.getDriver().getCpf();
 	}
 }

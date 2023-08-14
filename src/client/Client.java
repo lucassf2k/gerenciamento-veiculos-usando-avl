@@ -129,11 +129,11 @@ public class Client {
         var vehicle = this.protocol.responseNo();
         System.out.println(
             " Placa: " + vehicle.getValor().getLicencePlate() + 
-            " Modelo: " + vehicle.getValor().getName() + 
-            " Renavam: " + vehicle.getValor().getRenavam() + 
-            " Data de fabricação: " + vehicle.getValor().getManufacturingDate() + 
-            " Nome do condutor: " + vehicle.getValor().getDriver().getName() + 
-            " CPF do condutor " + vehicle.getValor().getDriver().getCpf()
+            "; Modelo: " + vehicle.getValor().getName() + 
+            "; Renavam: " + vehicle.getValor().getRenavam() + 
+            "; Data de fabricação: " + vehicle.getValor().getManufacturingDate() + 
+            "; Nome do condutor: " + vehicle.getValor().getDriver().getName() + 
+            "; CPF do condutor " + vehicle.getValor().getDriver().getCpf()
         );
     }
 }
