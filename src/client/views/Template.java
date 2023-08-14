@@ -15,7 +15,8 @@ public class Template {
                         4 - Atualizar
                         5 - Sair
                         6 - Total cadastrados
-                        7 - Busque por um"""
+                        7 - Busque por renavam
+                        8 - Busque por placa"""
         );
     }
 

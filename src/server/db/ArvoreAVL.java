@@ -1,5 +1,9 @@
 package server.db;
 
+import java.util.ArrayDeque;
+import java.util.ArrayList;
+import java.util.Queue;
+
 import libs.FileController;
 import server.entities.Vehicle;
 
@@ -34,20 +38,20 @@ public class ArvoreAVL {
 	
 	// pegar altura de um nó avl
 	
-	private long altura(No a) {
+	private int altura(No a) {
 		
 		if(a == null)
 			return -1;
 		return a.getAlturaNo();
 	}
 	
-	private long maior(long a, long b) {
+	private int maior(int a, int b) {
 		
 		return (a > b) ? a : b;
 
 	}
 	
-	private long obterFB(No a) {
+	private int obterFB(No a) {
 		
 		if(a == null)
 			return 0;
@@ -178,9 +182,9 @@ public class ArvoreAVL {
 		}
 		if (a == null) return a;
 		a.setAlturaNo(1 + this.maior(this.altura(a.getEsq()), this.altura(a.getDir())));
-		long fb = this.obterFB(a);
-		long fbSubArvEsq = this.obterFB(a.getEsq());
-		long fbSubArvDir = this.obterFB(a.getDir());
+		int fb = this.obterFB(a);
+		int fbSubArvEsq = this.obterFB(a.getEsq());
+		int fbSubArvDir = this.obterFB(a.getDir());
 		if (fb > 1 && fbSubArvEsq >= 0) return this.rds(a);
 		if (fb < -1 && fbSubArvDir <= 0) return this.res(a);
 		if (fb > 1 && fbSubArvEsq < 0) {
@@ -221,5 +225,23 @@ public class ArvoreAVL {
 		if (r.getChave() > k) return this.search(r.getEsq(), k);
 		if (r.getChave() < k) return this.search(r.getDir(), k);
 		return r;
+	}
+
+	public No searchLicensePlates(String licensePlate) {
+		No licensePlates = null;
+		No atual;
+		if(this.getRaiz() != null) {	
+			Queue<No> fila = new ArrayDeque<No>();
+			fila.add(this.getRaiz());
+			while (fila.isEmpty() == false) {
+				atual = fila.remove();
+				if (atual.valor.getLicencePlate() == licensePlate) licensePlates = atual;
+				if(atual.esq != null)
+					fila.add(atual.esq);
+				if(atual.dir != null)
+					fila.add(atual.dir);
+			}
+		}
+		return licensePlates;
 	}
 }

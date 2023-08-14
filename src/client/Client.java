@@ -50,6 +50,10 @@ public class Client {
                     this.getOne();
                     break;
                 }
+                case 8: {
+                    this.getAllLicensePlate();
+                    break;
+                }
                 default: {
                     System.out.println("Opção inválida! Tente novamente");
                     break;
@@ -132,13 +136,35 @@ public class Client {
         auxVechicle.setRenavam(renavam);
         this.protocol.request(8, auxVechicle);
         var vehicle = this.protocol.responseNo();
+        if (vehicle == null) {
+            System.out.println("Veículo não encontrado!");
+        } else {
+            System.out.println(
+                " Placa: " + vehicle.getValor().getLicencePlate() + 
+                "; Modelo: " + vehicle.getValor().getName() + 
+                "; Renavam: " + vehicle.getValor().getRenavam() + 
+                "; Data de fabricação: " + vehicle.getValor().getManufacturingDate() + 
+                "; Nome do condutor: " + vehicle.getValor().getDriver().getName() + 
+                "; CPF do condutor " + vehicle.getValor().getDriver().getCpf()
+            );
+        }
+    }
+
+    private void getAllLicensePlate() {
+        var vehicle = new Vehicle();
+        scan.nextLine();
+        System.out.print("Digite a placa: ");
+        String licensePlate = scan.nextLine();
+        vehicle.setLicencePlate(licensePlate);
+        this.protocol.request(4, vehicle);
+        var response = this.protocol.responseNo();
         System.out.println(
-            " Placa: " + vehicle.getValor().getLicencePlate() + 
-            "; Modelo: " + vehicle.getValor().getName() + 
-            "; Renavam: " + vehicle.getValor().getRenavam() + 
-            "; Data de fabricação: " + vehicle.getValor().getManufacturingDate() + 
-            "; Nome do condutor: " + vehicle.getValor().getDriver().getName() + 
-            "; CPF do condutor " + vehicle.getValor().getDriver().getCpf()
+            " Placa: " + response.getValor().getLicencePlate() + 
+            "; Modelo: " + response.getValor().getName() + 
+            "; Renavam: " + response.getValor().getRenavam() + 
+            "; Data de fabricação: " + response.getValor().getManufacturingDate() + 
+            "; Nome do condutor: " + response.getValor().getDriver().getName() + 
+            "; CPF do condutor " + response.getValor().getDriver().getCpf()
         );
     }
 }

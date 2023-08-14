@@ -1,5 +1,7 @@
 package protocol;
 
+import java.util.ArrayList;
+
 import server.Server;
 import server.db.No;
 import server.entities.Vehicle;
@@ -27,7 +29,7 @@ public class Protocol {
                 this.server.remove(data.getRenavam());
                 break;
             case 4:
-                // 
+                responseNo = this.server.getAllByLicensePlate(data.getLicencePlate());
                 break;
             case 6: 
                 responseINT = this.server.getAllNodes();

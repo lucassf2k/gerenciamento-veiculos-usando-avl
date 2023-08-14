@@ -1,5 +1,7 @@
 package server;
 
+import java.util.ArrayList;
+
 import server.db.ArvoreAVL;
 import server.db.No;
 import server.entities.Driver;
@@ -100,4 +102,8 @@ public class Server {
         this.save(vehicle);
         return true;
     } 
+
+    public No getAllByLicensePlate(String licensePlate) {
+        return this.db.searchLicensePlates(licensePlate);
+    }
 }

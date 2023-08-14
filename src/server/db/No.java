@@ -6,7 +6,7 @@ public class No {
 
 	long chave;
 	Vehicle valor;
-	long alturaNo;
+	int alturaNo;
 	No esq, dir;
 	
 	public No(Vehicle v) {
@@ -35,11 +35,11 @@ public class No {
 		this.valor = valor;
 	}
 
-	public long getAlturaNo() {
+	public int getAlturaNo() {
 		return alturaNo;
 	}
 
-	public void setAlturaNo(long alturaNo) {
+	public void setAlturaNo(int alturaNo) {
 		this.alturaNo = alturaNo;
 	}
 
