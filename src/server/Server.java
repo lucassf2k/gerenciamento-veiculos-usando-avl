@@ -39,10 +39,6 @@ public class Server {
         this.db.inserir(new Vehicle("UVW-2345", 34559012345L, "UrbanVoyager", "01/25/2023", new Driver("Emma Davis", "333.222.111-00")));
         this.db.inserir(new Vehicle("XYZ-3456", 45660123456L, "Explorer Pro", "09/08/2022", new Driver("William Johnson", "444.333.222-11")));
         this.db.inserir(new Vehicle("ABC-4567", 56771234567L, "SkyQuest", "07/13/2023", new Driver("Ella Martin", "555.444.333-22"))); 
-        this.db.inserir(new Vehicle("DEF-6789", 67894567890L, "WildRider", "04/05/2022", new Driver("Liam Adams", "666.555.444-33")));
-        this.db.inserir(new Vehicle("GHI-7890", 78905678901L, "CityChampion", "01/18/2023", new Driver("Olivia Johnson", "777.666.555-44")));
-        this.db.inserir(new Vehicle("JKL-8901", 89016789012L, "TrailMaster X", "11/27/2022", new Driver("James Davis", "888.777.666-55")));
-        this.db.inserir(new Vehicle("MNO-9012", 90127890123L, "UrbanTraveller", "09/09/2021", new Driver("Sophia Brown", "999.888.777-66")));
         this.db.inserir(new Vehicle("PQR-0123", 12338901234L, "AdventureQuest X", "07/01/2023", new Driver("Ethan Martinez", "000.999.888-77")));
         this.db.inserir(new Vehicle("STU-1234", 23449012345L, "SkyMaster Pro", "05/15/2022", new Driver("Ava White", "111.000.999-88")));
         this.db.inserir(new Vehicle("UVW-2345", 34550123456L, "Explorer Deluxe", "03/28/2023", new Driver("Noah Garcia", "222.111.000-99")));
