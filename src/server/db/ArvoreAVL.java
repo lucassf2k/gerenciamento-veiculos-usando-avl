@@ -122,7 +122,7 @@ public class ArvoreAVL {
 		x.alturaNo = 1 + this.maior(altura(x.getEsq()), altura(x.getDir()));
 		y.alturaNo = 1 + this.maior(altura(y.getEsq()), altura(y.getDir()));
 
-		String str = ";RES;";
+		String str = "RES";
 		FileController.Write("./src/server/logs/logs.txt", str);
 		return y;
 	}
@@ -139,7 +139,7 @@ public class ArvoreAVL {
 		
 		y.alturaNo = 1 + this.maior(altura(y.getEsq()), altura(y.getDir()));
 		x.alturaNo = 1 + this.maior(altura(x.getEsq()), altura(x.getDir()));
-		FileController.Write("./src/server/logs/logs.txt", ";RDS;");
+		FileController.Write("./src/server/logs/logs.txt", "RDS");
 		return x;
 	}
 
