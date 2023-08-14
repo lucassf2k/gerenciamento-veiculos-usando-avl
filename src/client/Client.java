@@ -113,6 +113,11 @@ public class Client {
         String cpfCondutor = scan.nextLine();
         var vehicle = new Vehicle(placa, renavam, modelo, dataFabricaca, new Driver(nomeCondutor, cpfCondutor));
         this.protocol.request(7, vehicle);
+        if (this.protocol.responseBool()) {
+            System.out.println("Atualizado com Sucesso.");
+        } else {
+            System.out.println("Veículo não encontrado");
+        }
     }
 
     private int getLength() {

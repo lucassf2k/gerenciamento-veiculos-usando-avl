@@ -9,6 +9,8 @@ public class Protocol {
 
     private int responseINT = -1;
     private No responseNo = null;
+    private Boolean responseBool = false;
+
     public void request(int type, Vehicle data) {
         switch (type) {
             case 0: 
@@ -31,7 +33,7 @@ public class Protocol {
                 responseINT = this.server.getAllNodes();
                 break;
             case 7: 
-                this.server.update(data.getRenavam(), data);
+                responseBool = this.server.update(data.getRenavam(), data);
                 break;
             case 8: 
                 responseNo = this.server.getOne(data.getRenavam());
@@ -43,8 +45,13 @@ public class Protocol {
     public int response() {
         return this.responseINT;
     }
-
+    
     public No responseNo() {
         return this.responseNo;
     }
+
+    public Boolean responseBool() {
+        return this.responseBool;
+    }
+
 }

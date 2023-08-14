@@ -95,6 +95,7 @@ public class Server {
         vehicle.setName(v.getName());
         vehicle.setManufacturingDate(v.getManufacturingDate());
         vehicle.setDriver(v.getDriver());
+        this.remove(renavam);
         this.save(vehicle);
         return true;
     } 
