@@ -5,7 +5,7 @@ import server.entities.Vehicle;
 
 public class ArvoreAVL {
 	
-	No raiz;
+	private No raiz;
 
 	public ArvoreAVL() {
 		this.setRaiz(null);
